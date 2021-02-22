@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+
+from hexadecimal_field.models import hexadecimal
+
+@admin.register(hexadecimal)
+class hexaAdmin(admin.ModelAdmin):
+    pass
