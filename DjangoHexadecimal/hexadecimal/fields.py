@@ -44,15 +44,15 @@ class HexadecimalField(models.CharField):
         if self.format not in ['0x', 'hash','h','normal']:
             raise ValueError('Unsupported format: {}'.format(self.format))
         self.default_validators = [VALIDATORS_PER_FORMAT[self.format]] #validator according to format
-
-        if kwargs.get('null'):
-            kwargs.setdefault('blank', True)
-            kwargs.setdefault('default', None)
-        elif kwargs.get('blank'):
-            kwargs.setdefault('default', '')
-        else:
-            kwargs.setdefault('default', DEFAULT_PER_FORMAT[self.format]) #stores sample format
-        #check args 
+        kwargs.setdefault('max_length', 18)
+        # if kwargs.get('null'):
+        #     kwargs.setdefault('blank', True)
+        #     kwargs.setdefault('default', None)
+        # if kwargs.get('blank'):
+        #     kwargs.setdefault('default', '')
+        # else:
+        kwargs.setdefault('default', DEFAULT_PER_FORMAT[self.format]) #stores sample format
+        #check args --> no such pre-defined function to detect invalid characters --> 
 
         super(HexadecimalField, self).__init__(*args, **kwargs)
 
