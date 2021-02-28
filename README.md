@@ -1,9 +1,9 @@
 # Django-Hexadecimal-Field
 Hexadecimal field in Django for hexadecimal inputs
 
-##Installation
+## Installation
 
-##Usage
+## Usage
 Import the HexadecimalField from fields.py 
 
 ```python
