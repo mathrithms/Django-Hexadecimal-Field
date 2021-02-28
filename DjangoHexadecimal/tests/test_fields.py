@@ -1,9 +1,9 @@
-from django import forms
+
 from django.forms import fields_for_model
 from django.db import models
 from django.test import TestCase
 
-from .fields import HexadecimalField
+from hexadecimal.fields import HexadecimalField
 
 
 class HexaModel(models.Model):
@@ -11,6 +11,7 @@ class HexaModel(models.Model):
 
     class Meta:
         app_label = 'hexadecimal'
+
 
 class HexadecimalFieldTestCase(TestCase):
     def setUp(self):
