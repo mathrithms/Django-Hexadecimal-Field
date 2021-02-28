@@ -17,7 +17,7 @@ VALIDATORS_PER_FORMAT = {
 
 class HexadecimalField(models.CharField):
     validator_required = []
-    
+
     def __init__(self, *args, **kwargs):
         self.format = kwargs.pop('format', 'hexa').lower()
         if self.format not in ['hexa']:
