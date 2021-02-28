@@ -12,6 +12,7 @@ class HexaModel(models.Model):
     class Meta:
         app_label = 'hexadecimal'
 
+
 class HexadecimalFieldTestCase(TestCase):
     def setUp(self):
         pass
