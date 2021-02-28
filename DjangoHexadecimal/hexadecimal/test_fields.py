@@ -7,7 +7,7 @@ from .fields import HexadecimalField
 
 
 class HexaModel(models.Model):
-    hexa = HexadecimalField(format='0x')
+    hexa = HexadecimalField(format='hexa')
 
     class Meta:
         app_label = 'hexadecimal'
@@ -24,4 +24,3 @@ class HexadecimalFieldTestCase(TestCase):
             fields_for_model(HexaModel())
         except AttributeError:
             self.fail('Raised Attribute Error')
-
