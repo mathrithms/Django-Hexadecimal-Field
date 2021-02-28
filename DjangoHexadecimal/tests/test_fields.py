@@ -3,7 +3,7 @@ from django.forms import fields_for_model
 from django.db import models
 from django.test import TestCase
 
-from .fields import HexadecimalField
+from hexadecimal.fields import HexadecimalField
 
 
 class HexaModel(models.Model):
