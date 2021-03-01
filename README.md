@@ -8,7 +8,7 @@ Import the HexadecimalField from fields.py
 
 ```python
 
-from hexadecimal.fields import HexadecimalField
+from djangoHexadecimal.fields import HexadecimalField
 from django.db import models
 
 class SampleModel(model.Model):
@@ -21,7 +21,7 @@ Similarly , the user can define their own validators which will be appended to h
 
 ```python
 
-from hexadecimal.fields import HexadecimalField
+from djangoHexadecimal.fields import HexadecimalField
 from django.db import models
 
 class SampleModel(model.Model):
