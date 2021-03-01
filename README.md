@@ -12,7 +12,19 @@ from hexadecimal.fields import HexadecimalField
 from django.db import models
 
 class SampleModel(model.Model):
-    hex_num = HexadecimalField(max_length='25',format='hexa')
+    hex_num = HexadecimalField(max_length='25')
 
 ```
 Note that user must specify max_length
+
+Similarly , the user can define their own validators which will be appended to hexadecimal validator
+
+```python
+
+from hexadecimal.fields import HexadecimalField
+from django.db import models
+
+class SampleModel(model.Model):
+    hex_num = HexadecimalField(max_length='25',validators=[custom_validator])
+
+```

@@ -10,18 +10,10 @@ else:
 HEXA_RE = re.compile('^[A-Fa-f0-9]+$')
 HEXA_VALID = RegexValidator(HEXA_RE, _('Enter a valid hex number '), 'invalid')
 
-VALIDATORS_PER_FORMAT = {
-    'hexa': HEXA_VALID
-}
-
 
 class HexadecimalField(models.CharField):
-    validator_required = []
 
     def __init__(self, *args, **kwargs):
-        self.format = kwargs.pop('format', 'hexa').lower()
-        if self.format not in ['hexa']:
-            raise ValueError('Unsupported format: {}'.format(self.format))
-        self.default_validators = [VALIDATORS_PER_FORMAT[self.format]]
+        self.validators += [HEXA_VALID]
 
         super(HexadecimalField, self).__init__(*args, **kwargs)
