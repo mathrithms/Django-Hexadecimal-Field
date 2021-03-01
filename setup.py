@@ -9,7 +9,7 @@ setup(
     author='mathrithms',
     author_email='hello@mathrithms.com',
     url='https://github.com/mathrithms/Django-Hexadecimal-Field',   # Provide the link to your github
-    install_requires=['django'],
+    install_requires=["Django"],
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
