@@ -8,7 +8,7 @@ def readall(path):
 
 setup(
     name="DjangoHexadecimalField",
-    version="0.0.1",
+    version="0.0.2",
     author="mathrithms",
     author_email="hello@mathrithms.com",
     description="Hexadecimal Field for Django",
