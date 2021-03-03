@@ -14,7 +14,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/mathrithms/Django-Hexadecimal-Field.git",
     packages=['djangoHexadecimal'],
-    install_requires=["Django"]
+    install_requires=["Django"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
