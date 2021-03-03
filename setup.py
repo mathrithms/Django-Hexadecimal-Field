@@ -1,8 +1,10 @@
 from setuptools import setup
 
+
 def readall(path):
     with open(path) as fp:
         return fp.read()
+
 
 setup(
     name="DjangoHexadecimalField",
