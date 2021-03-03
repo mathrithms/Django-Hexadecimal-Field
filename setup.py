@@ -8,13 +8,13 @@ def readall(path):
 
 setup(
     name="DjangoHexadecimalField",
-    version="0.0.2",
+    version="0.0.3",
     author="mathrithms",
     author_email="hello@mathrithms.com",
     description="Hexadecimal Field for Django",
     long_description=readall("README.md"),
     long_description_content_type="text/markdown",
-    url="https://github.com/mathrithms/Django-Hexadecimal-Field.git",
+    url="https://github.com/mathrithms/Django-Hexadecimal-Field",
     packages=['djangoHexadecimal'],
     install_requires=["Django"],
     classifiers=[
